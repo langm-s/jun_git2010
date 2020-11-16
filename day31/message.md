@@ -43,10 +43,19 @@
 5. git push -u origin master 第一次执行
 	 git push 把本地仓库推送到远程仓库
 	 -u origin master 设置默认提交master分支到origin
-6. git push -u -f origin master强制推送给远程仓库、
+6. git push -u -f origin master强制推送给远程仓库
 
 ## 下载远程仓库的项目到本地
 1. 克隆项目，整个版本库克隆下来：git clone '远程项目地址'
 2. (适用于本地没有该项目的时候)
-3. 如果本地有该项目，则应该直接更新到本地：git pull
-4. 一定要把工作区的修改提交到本地仓库，再更新远程到本地
+3. 一定要把工作区的修改提交到本地仓库，再更新远程到本地
+4. 如果本地有该项目，则应该直接更新到本地：git pull
+5. git fetch  也可以将远程更新到本地
+
+## 分支操作
+1. 查看当前仓库所有分支： git branch
+2. 当前分支带有 *号
+3. 查看远程分支：git branch -r
+4. 创建分支：git branch 分支名
+5. 切换分支：git checkout 分支名(切换分支之后，工作区的代码自动切换到对应分支的代码)
+6. 
