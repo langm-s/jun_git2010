@@ -45,4 +45,4 @@
 	-u origin master 设置默认提交master分支到origin
 6.git push -u -f origin master强制推送给远程仓库
 
-线上修改远程仓库的文件
+线上修改远程仓库的文件12345678
