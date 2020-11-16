@@ -13,8 +13,7 @@
 ## 全局配置
 1.配置用户名：git config --global user.name "你的git名称"
 2.配置用户邮箱：git config --global user.email "你的git验证邮箱"
-
-4.查看配置信息：git config --list
+3.查看配置信息：git config --list
 
 ## 初始化
 1.执行命令 git init 初始化版本库
@@ -31,3 +30,7 @@
 1.命令 git status查看当前目录下的操作状态
 2.git log 查看日志
 3.git reflog 查看简版日志
+
+##回退版本
+1.git reset --hard HEAD^(回退到上一个版本，一个^代表上一个版本)
+2.git reset --hard 版本号 (回退到指定版本)
