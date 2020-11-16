@@ -62,6 +62,27 @@
 6. 合并分支：git merge 分支名  (把该分支合并到当前分支)
 7. 删除分支：git branch -d
 8. 创建分支并提交到远程仓库：创建新分支，然后添加到暂存->添加到本地仓库->上传到远程仓库 git push origin 分支名
+9. git pull origin dev 添加项目到本地，自动合并到当前分支
+10. git fetch origin dev 添加项目到本地，不会合并到当前分支
+11. git merge FETCH_HEAD 手动合并
+
+## 添加协作成员
+1. 在当前目录位置 点击settings
+2. 选择Manage access
+3. Invite a collaborator
+4. 受邀人收到邮件后点击同意接受邀请
 
 
-
+## 配置ssh密钥
+1. 生成密钥：ssh-keygen -t rsa -C '个人邮箱'
+2. 找到.ssh文件夹下的id_rsa.pub文件
+3. 在编辑器中打开该文件并复制内容
+4. GitHub个人头像 ->settings
+5. 选择SSH Ksys
+6. new SSH keys
+7. 粘贴复制的内容
+8. add ssh key
+9. 本地仓库和远程仓库关联（使用ssh地址）
+10. 重新配置origin
+11. 删除原来的配置：git remote rm origin
+12. 添加新的关联： git remote add origin '远程中的ssh地址'
