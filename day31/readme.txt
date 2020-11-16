@@ -31,6 +31,15 @@
 2.git log 查看日志
 3.git reflog 查看简版日志
 
-##回退版本
+##回退版本(切记回退版本之前先提交当前修改的工作区，以免丢失已作的修改数据)
 1.git reset --hard HEAD^(回退到上一个版本，一个^代表上一个版本)
 2.git reset --hard 版本号 (回退到指定版本)
+
+##将本地仓库提交到远程仓库
+1.在GitHub创建一个远程仓库
+2.本地工作区先提交到本地仓库
+3.本地仓库看链接远程仓库地址：git remote add origin '地址'
+4.查看所关联的远程仓库：git remote -v
+5.git push -u origin master 第一次执行
+	git push 把本地仓库推送到远程仓库
+	-u origin master 设置默认提交master分支到origin
